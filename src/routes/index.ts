@@ -5,6 +5,6 @@ import wallets from './wallets.routes'
 
 const router = Router()
 
-router.use(wallets)
+router.use('/wallets', wallets)
 
 export default router

@@ -1,0 +1,1 @@
+export { default as walletSchema } from './wallet.schema'
