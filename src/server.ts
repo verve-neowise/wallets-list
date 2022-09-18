@@ -1,10 +1,12 @@
 import express from 'express'
 import cors from 'cors'
 
-import { errorHandler, logger } from './middlewares'
+import { accessProtector, errorHandler, logger } from './middlewares'
 import routes from './routes'
 
 const app = express()
+
+app.use(accessProtector())
 
 app.use(cors({
     credentials: true,
